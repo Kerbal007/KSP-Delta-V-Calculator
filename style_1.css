@@ -13,6 +13,7 @@
 /*tyle*/
 body{
 	background-color:			rgb(26,117,255);
+	overflow:					hidden;
 }
 
 .title{
@@ -22,21 +23,95 @@ body{
 	width:						480px;
 	transform:					translate(-240px,0);
 	text-align:					center;
+	font-size:					5vh;
 	
 }
 
-.whitefont{
+.whiteFont{
 	color:						rgb(255,255,255);
 	font-family:				'Gloria Hallelujah', 'Book Antiqua';
 }
 
 .made{
 	position:					Absolute;
-	top:						90%;
+	top:						0%;
 	left:						50%;
-	font-size:					0.8em;
+	font-size:					2vh;
 	width:						480px;
 	text-align:					center;
 	transform:					translate(-240px,0);
 	text-decoration:			none;
+}
+
+.menu{
+	position:					Absolute;
+	top:						65%;
+	left:						50%;
+	width:						400px;
+	transform:					translate(-200px,0);
+}
+
+
+.ball{
+	background:					rgb(255,255,255);
+	width:						60px;
+	height:						60px;
+	border-radius:				100%;
+	position:					relative;
+	top:						100%;
+	left:						50%;
+	transform:					translate(-30px,200px);
+	z-index:					1000;
+}
+
+.moon{
+	background:					rgb(255,255,255);
+	width:						30px;
+	height:						30px;
+	border-radius:				100%;
+	z-index:					1000;
+}
+
+#mun{
+	position:					relative;
+	top:						85%;
+	left:						50%;
+	transform:					translate(-130px,100px);
+	
+}
+
+#minmus{
+	position:					relative;
+	top:						85%;
+	left:						50%;
+	transform:					translate(100px,70px);
+	
+}
+
+#mun:hover{
+	background-image:			url("https://wiki.kerbalspaceprogram.com/images/thumb/9/93/Mun.jpg/270px-Mun.jpg");
+	background-size:			4vmin 4vmin;
+}
+
+#minmus:hover{
+	background-image:			url("http://i.imgur.com/CKK2010.jpg");
+	background-size:			4vmin 4vmin;
+}
+
+
+.ball:hover{
+	background-image:			url("http://img13.deviantart.net/0224/i/2015/187/a/1/ksp_kerbin_planet_texture_by_michawlo-d904nk8.jpg");
+	background-size:			16vmin 8vmin;
+}
+
+.orbit{
+	position:					relative;
+	top:						80%;
+	left:						50%;
+	transform:					translate(-150px,0);
+	width:						300px;
+	height:						300px;
+	border-top:					thick solid rgb(255,255,255);
+	border-radius:				100%;
+	
 }
